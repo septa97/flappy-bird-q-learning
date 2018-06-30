@@ -1,0 +1,4 @@
+numpy==1.14.5
+Pillow==5.1.0
+-e git+https://github.com/ntasfi/PyGame-Learning-Environment.git@cbdc53630b50fe6cffe950ae6b89c442f0a6eaae#egg=ple
+pygame==1.9.3
