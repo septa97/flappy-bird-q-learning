@@ -32,7 +32,7 @@ class Agent():
         if reward >= 0:
             return 1
         else:
-            return -1000
+            return -100
 
     def get_current_state(self, observation):
         state = np.zeros((3,), dtype=int)
