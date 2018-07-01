@@ -29,8 +29,6 @@ class Agent():
     def act(self, p, action):
         reward = p.act(self.action_space[action])
         
-        # if reward > 0:
-        #     return 1000
         if reward >= 0:
             return 1
         else:
@@ -65,8 +63,8 @@ if __name__ == "__main__":
 
     p.init()
 
-    s = np.zeros((3,), dtype=int)
-    iteration = 0
+    s = agent.get_current_state(game.getGameState())
+    episodes = 0
     max_score = 0
 
     while True:
@@ -90,7 +88,7 @@ if __name__ == "__main__":
         # time.sleep(0.01)
 
         if p.game_over():
-            iteration += 1
-            print('Iteration: %s, Current score: %s, Max score: %s' % (iteration, current_score, max_score))
+            episodes += 1
+            print('Episodes: %s, Current score: %s, Max score: %s' % (episodes, current_score, max_score))
             p.reset_game()
 
