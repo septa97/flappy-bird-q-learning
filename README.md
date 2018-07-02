@@ -23,3 +23,8 @@ pip install -r requirements.txt
 ```sh
 python flappy-bird-PLE.py
 ```
+
+* Uncomment this code if you want to see the agent learn in normal speed
+~~~python
+# time.sleep(0.01)
+~~~
