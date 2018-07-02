@@ -1,5 +1,5 @@
 # flappy-bird-q-learning
-> Reinforcement learning using Q-learning on a Flappy Bird agent
+> Reinforcement learning using Q-learning on a Flappy Bird agent. Read my blog post in [this link](https://septa97.me/2018/06/q-learning-flappy-bird)
 
 ## Running the code
 * Clone the repository
